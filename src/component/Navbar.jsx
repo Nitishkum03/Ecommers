@@ -1,9 +1,11 @@
 import { useState } from 'react';
 import { FaSearch, FaShoppingCart, FaBars, FaTimes } from 'react-icons/fa'
 import logoimg from "../assets/logo.png"
+import CartDrawer from './CartDrawer';
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [cartOpens , setCartOpens] = useState(false);
 
   return (
     <nav className="bg-[1b1b1b] text-white p-4 flex items-center justify-between relative">
@@ -37,11 +39,15 @@ export default function Navbar() {
         </div>
       </div>
       <div className="flex items-center space-x-4">
-        <div className="bg-[1b1b1b] hover:bg-black p-4 border rounded-lg cursor-pointer">
-          <FaShoppingCart />
-        </div>
-      </div>
+          <button className='bg-[1b1b1b] justify-center hover:bg-black p-4 border rounded-lg cursor-pointer'
+          onClick={()=> setCartOpens(true)}
+          >
+             <FaShoppingCart />
 
+          </button>
+          
+      </div>
+      <CartDrawer isOpen={cartOpens} onClose={() => setCartOpens(false)}/>
       {menuOpen && (
         <div className="absolute top-16 left-0 w-full bg-black flex flex-col items-center space-y-4 py-4 z-50 md:hidden">
           <input
