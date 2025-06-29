@@ -1,14 +1,14 @@
-const Api = [
+export const products = [
   {
     id: 1,
-    name: "Acme Circles T-Shirt",
+    name: "NextCart Circles T-Shirt",
     price: "$20.00",
     image: "https://demo.vercel.store/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0754%2F3727%2F7491%2Ffiles%2Ft-shirt-1.png%3Fv%3D1689798965&w=1920&q=75", // Replace with actual image paths
     size: "large",
   },
   {
     id: 2,
-    name: "Acme Drawstring Bag",
+    name: "NextCart Drawstring Bag",
     price: "$12.00",
     image: "https://demo.vercel.store/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0754%2F3727%2F7491%2Ffiles%2Fbag-1-dark.png%3Fv%3D1689796304&w=640&q=75",
     size: "small",
@@ -22,14 +22,14 @@ const Api = [
   },
     {
       "id": 4,
-      "name": "Acme Slip-On Shoes",
+      "name": "NextCart Slip-On Shoes",
       "price": 45.00,
       "currency": "USD",
       "image": "https://demo.vercel.store/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0754%2F3727%2F7491%2Ffiles%2Fshoes-1.png%3Fv%3D1690004109&w=640&q=75"
     },
     {
       "id": 5,
-      "name": "Acme Circles T-Shirt",
+      "name": "NextCart Circles T-Shirt",
       "price": 20.00,
       "currency": "USD",
       "image": "https://demo.vercel.store/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0754%2F3727%2F7491%2Ffiles%2Ft-shirt-2.png%3Fv%3D1689798965&w=1920&q=75"
@@ -43,42 +43,42 @@ const Api = [
     },
     {
       "id": 7,
-      "name": "Acme Keyboard",
+      "name": "NextCart Keyboard",
       "price": 150.00,
       "currency": "USD",
       "image": "https://demo.vercel.store/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0754%2F3727%2F7491%2Ffiles%2Fkeyboard.png%3Fv%3D1690003507&w=640&q=75"
     },
     {
       "id": 8,
-      "name": "Acme Prism T-Shirt",
+      "name": "NextCart Prism T-Shirt",
       "price": 25.00,
       "currency": "USD",
       "image": "https://demo.vercel.store/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0754%2F3727%2F7491%2Ffiles%2Ft-shirt-spiral-1.png%3Fv%3D1690003571&w=640&q=75"
     },
     {
       "id": 9,
-      "name": "Acme T-Shirt",
+      "name": "NextCart T-Shirt",
       "price": 20.00,
       "currency": "USD",
       "image": "https://demo.vercel.store/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0754%2F3727%2F7491%2Ffiles%2Ft-shirt-color-black.png%3Fv%3D1690003675&w=640&q=75"
     },
     {
       "id": 10,
-      "name": "Acme Sticker",
+      "name": "NextCart Sticker",
       "price": 4.00,
       "currency": "USD",
       "image": "https://demo.vercel.store/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0754%2F3727%2F7491%2Ffiles%2Fsticker.png%3Fv%3D1690003619&w=640&q=75"
     },
     {
       "id": 11,
-      "name": "Acme Rainbow Sticker",
+      "name": "NextCart Rainbow Sticker",
       "price": 4.00,
       "currency": "USD",
       "image": "https://demo.vercel.store/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0754%2F3727%2F7491%2Ffiles%2Fsticker-rainbow.png%3Fv%3D1690003602&w=640&q=75"
     },
     {
       "id": 12,
-      "name": "Acme Pacifier",
+      "name": "NextCart Pacifier",
       "price": 10.00,
       "currency": "USD",
       "image": "https://demo.vercel.store/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0754%2F3727%2F7491%2Ffiles%2Fpacifier-1.png%3Fv%3D1690003544&w=640&q=75"
@@ -99,14 +99,14 @@ const Api = [
     },
     {
       "id": 15,
-      "name": "Acme Cap",
+      "name": "NextCart Cap",
       "price": 20.00,
       "currency": "USD",
       "image": "https://demo.vercel.store/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0754%2F3727%2F7491%2Ffiles%2Fhat-1.png%3Fv%3D1690002833&w=640&q=75"
     },
     {
       "id": 16,
-      "name": "Acme Dog Sweater",
+      "name": "NextCart Dog Sweater",
       "price": 20.00,
       "currency": "USD",
       "image": "https://demo.vercel.store/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0754%2F3727%2F7491%2Ffiles%2Fdog-sweater-1.png%3Fv%3D1690003132&w=640&q=75"
@@ -120,28 +120,28 @@ const Api = [
     },
     {
       "id": 18,
-      "name": "Acme Cowboy Hat",
+      "name": "NextCart Cowboy Hat",
       "price": 160.00,
       "currency": "USD",
       "image": "https://demo.vercel.store/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0754%2F3727%2F7491%2Ffiles%2Fcowboy-hat-black-1.png%3Fv%3D1690208765&w=640&q=75"
     },
     {
       "id": 19,
-      "name": "Acme Bomber Jacket",
+      "name": "NextCart Bomber Jacket",
       "price": 50.00,
       "currency": "USD",
       "image": "https://demo.vercel.store/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0754%2F3727%2F7491%2Ffiles%2Fbomber-jacket-army.png%3Fv%3D1690002722&w=640&q=75"
     },
     {
       "id": 20,
-      "name": "Acme Baby Onesie",
+      "name": "NextCart Baby Onesie",
       "price": 10.00,
       "currency": "USD",
       "image": "https://demo.vercel.store/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0754%2F3727%2F7491%2Ffiles%2Fbaby-onesie-beige-1.png%3Fv%3D1690002632&w=640&q=75"
     },
     {
       "id": 21,
-      "name": "Acme Baby Cap",
+      "name": "NextCart Baby Cap",
       "price": 10.00,
       "currency": "USD",
       "image": "https://demo.vercel.store/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0754%2F3727%2F7491%2Ffiles%2Fbaby-cap-black.png%3Fv%3D1690002570&w=640&q=75"

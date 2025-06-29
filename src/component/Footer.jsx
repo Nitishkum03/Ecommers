@@ -1,4 +1,5 @@
 import logoimg from '../assets/logo.png'
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -9,7 +10,7 @@ const Footer = () => {
            <button className="flex items-center gap-2 px-4 py-2 border border-neutral-400 rounded bg-black text-white text-lg">
             <img src={logoimg} alt="Deploy" className="w-4 h-4" />
           </button>
-          <span className="font-semibold text-base uppercase tracking-wider">ACME STORE</span>
+          <span className="font-semibold text-base uppercase tracking-wider">Nextcart</span>
         </div>
         {/* Navigation */}
         <nav className="w-full md:w-auto flex justify-center">
@@ -30,9 +31,9 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a href="#" className="block p-2 text-base underline-offset-4 hover:text-black hover:underline dark:hover:text-neutral-300 text-black dark:text-neutral-300">
+              <Link to="/shipping-return-policy" className="block p-2 text-base underline-offset-4 hover:text-black hover:underline dark:hover:text-neutral-300 text-black dark:text-neutral-300">
                 Shipping & Return Policy
-              </a>
+              </Link>
             </li>
             <li>
               <a href="#" className="block p-2 text-base underline-offset-4 hover:text-black hover:underline dark:hover:text-neutral-300 text-black dark:text-neutral-300">
@@ -56,7 +57,7 @@ const Footer = () => {
       {/* Footer Bottom */}
       <div className="mt-8 border-t border-neutral-700 pt-7 text-center text-xs text-neutral-400 space-y-1 md:flex md:justify-between md:items-center md:space-y-0 md:text-left">
         <div>
-          © 2023-2025 ACME, Inc. All rights reserved.
+          © 2023-2025 Nextcart, Inc. All rights reserved.
           <span className="hidden md:inline mx-2">|</span>
           <a href="#" className="underline hover:text-white ml-0 md:ml-2">View the source</a>
         </div>
