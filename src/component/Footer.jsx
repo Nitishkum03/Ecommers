@@ -16,7 +16,7 @@ const Footer = () => {
         <nav className="w-full md:w-auto flex justify-center">
           <ul className="flex flex-col md:flex-row items-center gap-3 md:gap-8">
             <li>
-              <a href="#" className="block p-2 text-base underline-offset-4 hover:text-black hover:underline dark:hover:text-neutral-300 text-black dark:text-neutral-300">
+              <a href="/" className="block p-2 text-base underline-offset-4 hover:text-black hover:underline dark:hover:text-neutral-300 text-black dark:text-neutral-300">
                 Home
               </a>
             </li>
@@ -59,7 +59,7 @@ const Footer = () => {
         <div>
           © 2023-2025 Nextcart, Inc. All rights reserved.
           <span className="hidden md:inline mx-2">|</span>
-          <a href="#" className="underline hover:text-white ml-0 md:ml-2">View the source</a>
+          <a href="https://github.com/Nitishkum03/Ecommers" className="underline hover:text-white ml-0 md:ml-2">View the source</a>
         </div>
         <div>
           Created by <span className="font-semibold ">Nitish</span>

@@ -4,11 +4,12 @@ import logoimg from "../assets/logo.png"
 import CartDrawer from "./CartDrawer"
 import { FaX } from 'react-icons/fa6';
 import { Link } from 'react-router-dom';
+import { Usecart } from "../context/Context.jsx";
 
 export default function Navbar({ search, setSearch }) {
   const [menuOpen, setMenuOpen] = useState(false);
   const [cartOpens , setCartOpens] = useState(false);
-
+  const { cartItems } = Usecart();
   return (
     <nav className="bg-[1b1b1b] text-white p-4 flex items-center justify-between relative">
       <button
@@ -20,13 +21,13 @@ export default function Navbar({ search, setSearch }) {
       <div className="flex items-center space-x-2 gap-7">
         <Link to="/" className="p-2 rounded-lg flex items-center gap-2">
           <img src={logoimg} alt="" className='w-10' />
-          <span className="font-semibold text-xl">Nextcart</span>
+          <span className="font-semibold text-xl hover:text-green-400 duration-200">Nextcart</span>
         </Link>
         
         <div className="hidden md:flex items-center space-x-6 text-lg text-[#3d3d3d] ">
-        <Link to="/all" className="hover:underline hover:text-white">All</Link>
-        <a href="#" className="hover:underline hover:text-white">Shirts</a>
-        <a href="#" className="hover:underline hover:text-white">Stickers</a>
+        <Link to="/all" className="hover:underline hover:text-green-400 duration-200">All</Link>
+        <a href="#" className="hover:underline hover:text-green-400 duration-200">Shirts</a>
+        <a href="#" className="hover:underline hover:text-green-400 duration-200">Stickers</a>
       </div>
       </div>
 
@@ -43,10 +44,15 @@ export default function Navbar({ search, setSearch }) {
         </div>
       </div>
       <div className="flex items-center space-x-4">
-          <button className='bg-[1b1b1b] justify-center hover:bg-black p-4 border rounded-lg cursor-pointer'
+          <button className='bg-[1b1b1b] justify-center duration-400 p-4 border hover:bg-green-400 rounded-lg cursor-pointer'
           onClick={()=> setCartOpens(true)}
           >
              <FaShoppingCart />
+             {cartItems.length > 0 && (
+               <span className="absolute top-2 right-2 bg-green-600 text-white rounded-full text-xs px-2 py-0.5 font-bold">
+                 {cartItems.length}
+               </span>
+             )}
           </button>
           
       </div>
@@ -84,11 +90,10 @@ export default function Navbar({ search, setSearch }) {
           
         </div>
         <ul className="flex flex-col p-4 space-y-4">
-          <li><Link to="/" className="hover:text-blue-400 hover:underline">Home</Link></li>
-          <li><Link to="/all" className="hover:text-blue-400 hover:underline">All</Link></li>
-          <li><a href="#" className="hover:text-blue-400 hover:underline">Shop</a></li>
-          <li><a href="#" className="hover:text-blue-400 hover:underline">Cart</a></li>
-          <li><a href="#" className="hover:text-blue-400 hover:underline">Contact</a></li>
+          <li><Link to="/" className="hover:text-green-400 duration-200 hover:underline" onClick={()=>setMenuOpen(false)}>Home</Link></li>
+          <li><Link to="/all" className="hover:text-green-400 duration-200 hover:underline" onClick={()=>setMenuOpen(false)}>All</Link></li>
+          <li><a href="#" className="hover:text-green-400 duration-200 hover:underline" onClick={()=>setCartOpens(true)}>Cart</a></li>
+          <li><a href="#" className="hover:text-green-400 duration-200 hover:underline">Contact</a></li>
         </ul>
       </div>
    
